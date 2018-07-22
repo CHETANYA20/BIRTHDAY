@@ -1,0 +1,73 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="prefixfree.js"></script>
+      
+  </head>
+
+  <body>
+     
+  
+    <div id="outside">
+    
+      <p id="outside-title">
+        <h1>HAPPY BIRTHDAY TO MY BEST FRIEND (ACHIN VASHISTH)</h1>
+      </p>
+      
+      <p id="p"><em><u><h2>CLICK ON THE CAKE ^.^</h2> </u></em></p>
+      
+
+
+      <img id="myImage" onclick="changeImage()" src="cake.jpg" width="625" height="350">
+      <script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("clickoff")) {
+        image.src = "cake.jpg";
+    } else {
+        image.src = "candle.gif";
+    }
+}
+</script>
+      <embed src="happybday.wav" autostart="true" loop="false"
+width="2" height="0">
+</embed>
+
+
+      <p>
+        <button onclick="open_card()">CLICK TO OPEN</button>
+      </p>
+
+    </div>
+  
+    <div id="inside">
+    
+      <p id="inside-title">
+        <h1>HAPPY BIRTHDAY TO MY DEAR BESTIE!!!</h1>
+      </p>
+      
+      <img id="inside-pic" src="pic.jpg">
+      
+      <p id="message">
+        <h2>YOUR MESSAGE HERE!</h2>
+    <h3> Each time I'm about crying, you start my tears.
+    When I laugh,you laugh with me.
+If I have a problem, you try to solve it.
+When I am sad, it's through you I rejoice again.
+When I'm in a bad mood, you cheer me up.
+When we argue, we get reconciled quickly.
+That's true friendship!Thanks for coming into my life.</h3>
+    <h1>MANY MANY HAPPY RETURNS OF THE DAY.</h1>
+      </p>
+
+      <p>
+        <button onclick="close_card()">CLICK TO CLOSE</button>
+      </p>
+      
+    </div>
+    
+  </body>
+  
+</html>
